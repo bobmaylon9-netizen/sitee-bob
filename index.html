@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo AgroPrime | Defensivos Agrícolas</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --verde-escuro: #0f2e1d;
+      --verde-medio: #1f4f34;
+      --dourado: #c9a24d;
+      --cinza-claro: #f2f4f3;
+      --cinza-escuro: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cinza-claro);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      height: 100vh;
+      background:
+        linear-gradient(rgba(10,20,15,.75), rgba(10,20,15,.75)),
+        url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      color: var(--dourado);
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2rem;
+      opacity: .95;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 10%;
+      background: #fff;
+    }
+
+    section.light {
+      background: var(--cinza-claro);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      color: var(--verde-escuro);
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: 900px;
+      font-size: 1.05rem;
+    }
+
+    /* GRID */
+    .grid {
+      display: reduce;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,.12);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 30px;
+    }
+
+    .card h3 {
+      color: var(--verde-medio);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    /* DARK SECTION */
+    .dark {
+      background: var(--verde-escuro);
+      color: #fff;
+    }
+
+    .dark h2 {
+      color: var(--dourado);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--cinza-escuro);
+      color: #aaa;
+      text-align: center;
+      padding: 45px 20px;
+      font-size: .9rem;
+    }
+
+    footer span {
+      color: var(--dourado);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header>
+  <div>
+    <h1>Grupo AgroPrime</h1>
+    <p>
+      Comércio atacadista de defensivos agrícolas com atuação estratégica,
+      responsabilidade técnica e rigor absoluto em conformidade regulatória.
+    </p>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section>
+  <h2>Quem Somos</h2>
+  <p>
+    O <strong>Grupo AgroPrime</strong> atua no comércio atacadista de defensivos agrícolas,
+    fornecendo soluções para revendedores, cooperativas e grandes operações do agronegócio.
+    Nossa estrutura é orientada à escala, segurança operacional e cumprimento integral
+    das normas técnicas e legais vigentes.
+  </p>
+</section>
+
+<!-- PRODUTOS -->
+<section class="light">
+  <h2>Portfólio de Produtos</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598514982558-6c0d7cdb29a6">
+      <div class="card-content">
+        <h3>Inseticidas</h3>
+        <p>Formulações avançadas para controle eficaz de pragas agrícolas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0">
+      <div class="card-content">
+        <h3>Herbicidas</h3>
+        <p>Soluções técnicas para manejo sustentável de plantas daninhas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8">
+      <div class="card-content">
+        <h3>Fungicidas</h3>
+        <p>Proteção fitossanitária com alto padrão de desempenho.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFORMIDADE -->
+<section class="dark">
+  <h2>Conformidade, Segurança e Governança</h2>
+  <p>
+    Todas as operações seguem rigorosamente as diretrizes do MAPA,
+    legislações ambientais e normas estaduais.
+    Contamos com responsável técnico habilitado, controle de estoque,
+    armazenamento adequado e logística especializada.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 <span>Grupo AgroPrime</span> • Defensivos Agrícolas • Todos os direitos reservados
+</footer>
+
+</body>
+</html>
