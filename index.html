@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupo AgroPrime | Defensivos Agrícolas</title>
+  <title>Excelência em Defensivos Agrícolas</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
       --verde-medio: #1f4f34;
       --dourado: #c9a24d;
       --cinza-claro: #f2f4f3;
-      --cinza-escuro: #1a1a1a;
+      --preto: #0b0b0b;
     }
 
     * {
@@ -30,31 +30,31 @@
       line-height: 1.6;
     }
 
-    /* HEADER */
+    /* HERO */
     header {
       height: 100vh;
       background:
-        linear-gradient(rgba(10,20,15,.75), rgba(10,20,15,.75)),
+        linear-gradient(rgba(8,20,14,.78), rgba(8,20,14,.78)),
         url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #fff;
       padding: 40px;
+      color: #fff;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.8rem;
+      font-size: 3.9rem;
       color: var(--dourado);
       margin-bottom: 20px;
     }
 
     header p {
-      max-width: 800px;
+      max-width: 820px;
       margin: auto;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       opacity: .95;
     }
 
@@ -68,11 +68,20 @@
       background: var(--cinza-claro);
     }
 
+    section.dark {
+      background: var(--verde-escuro);
+      color: #fff;
+    }
+
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.6rem;
+      font-size: 2.7rem;
       color: var(--verde-escuro);
       margin-bottom: 30px;
+    }
+
+    section.dark h2 {
+      color: var(--dourado);
     }
 
     p {
@@ -82,7 +91,6 @@
 
     /* GRID */
     .grid {
-      display: reduce;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 40px;
@@ -91,7 +99,7 @@
 
     .card {
       background: #fff;
-      border-radius: 18px;
+      border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 15px 40px rgba(0,0,0,.12);
       transition: .3s;
@@ -117,19 +125,28 @@
       font-size: 1.2rem;
     }
 
-    /* DARK SECTION */
-    .dark {
-      background: var(--verde-escuro);
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
       color: #fff;
+      padding: 16px 22px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      z-index: 999;
     }
 
-    .dark h2 {
-      color: var(--dourado);
+    .whatsapp:hover {
+      opacity: .9;
     }
 
     /* FOOTER */
     footer {
-      background: var(--cinza-escuro);
+      background: var(--preto);
       color: #aaa;
       text-align: center;
       padding: 45px 20px;
@@ -152,10 +169,11 @@
 <!-- HERO -->
 <header>
   <div>
-    <h1>Grupo AgroPrime</h1>
+    <h1>Excelência em Defensivos Agrícolas</h1>
     <p>
-      Comércio atacadista de defensivos agrícolas com atuação estratégica,
-      responsabilidade técnica e rigor absoluto em conformidade regulatória.
+      Atuação estratégica no comércio atacadista de defensivos agrícolas,
+      com foco em desempenho, segurança operacional e rigor absoluto
+      em conformidade regulatória.
     </p>
   </div>
 </header>
@@ -164,10 +182,10 @@
 <section>
   <h2>Quem Somos</h2>
   <p>
-    O <strong>Grupo AgroPrime</strong> atua no comércio atacadista de defensivos agrícolas,
-    fornecendo soluções para revendedores, cooperativas e grandes operações do agronegócio.
-    Nossa estrutura é orientada à escala, segurança operacional e cumprimento integral
-    das normas técnicas e legais vigentes.
+    Empresa modelo especializada no comércio atacadista de defensivos agrícolas,
+    atendendo revendedores, cooperativas e grandes operações do agronegócio.
+    Estrutura orientada à escala, responsabilidade técnica e cumprimento integral
+    das normas legais e ambientais vigentes.
   </p>
 </section>
 
@@ -176,11 +194,12 @@
   <h2>Portfólio de Produtos</h2>
 
   <div class="grid">
+
     <div class="card">
       <img src="https://images.unsplash.com/photo-1598514982558-6c0d7cdb29a6">
       <div class="card-content">
         <h3>Inseticidas</h3>
-        <p>Formulações avançadas para controle eficaz de pragas agrícolas.</p>
+        <p>Controle eficiente de pragas com tecnologia de alta performance.</p>
       </div>
     </div>
 
@@ -188,7 +207,7 @@
       <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0">
       <div class="card-content">
         <h3>Herbicidas</h3>
-        <p>Soluções técnicas para manejo sustentável de plantas daninhas.</p>
+        <p>Manejo técnico de plantas daninhas com segurança agronômica.</p>
       </div>
     </div>
 
@@ -196,9 +215,34 @@
       <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8">
       <div class="card-content">
         <h3>Fungicidas</h3>
-        <p>Proteção fitossanitária com alto padrão de desempenho.</p>
+        <p>Proteção fitossanitária avançada para diversas culturas.</p>
       </div>
     </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30">
+      <div class="card-content">
+        <h3>Acaricidas</h3>
+        <p>Soluções específicas para controle de ácaros em larga escala.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+      <div class="card-content">
+        <h3>Nematicidas</h3>
+        <p>Proteção de raízes e solo com alta eficiência técnica.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524594154908-eddc3d3c8e1a">
+      <div class="card-content">
+        <h3>Soluções Integradas</h3>
+        <p>Portfólio completo para diferentes sistemas produtivos.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -206,17 +250,21 @@
 <section class="dark">
   <h2>Conformidade, Segurança e Governança</h2>
   <p>
-    Todas as operações seguem rigorosamente as diretrizes do MAPA,
-    legislações ambientais e normas estaduais.
-    Contamos com responsável técnico habilitado, controle de estoque,
-    armazenamento adequado e logística especializada.
+    Operações alinhadas às diretrizes do MAPA, legislações ambientais
+    e normas estaduais. Atuação com responsável técnico habilitado,
+    controle rigoroso de estoque, armazenamento adequado e logística especializada.
   </p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  © 2026 <span>Grupo AgroPrime</span> • Defensivos Agrícolas • Todos os direitos reservados
+  © 2026 <span>Modelo Institucional – Defensivos Agrícolas</span> • Todos os direitos reservados
 </footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/5599999999999" target="_blank">
+  WhatsApp Comercial
+</a>
 
 </body>
 </html>
